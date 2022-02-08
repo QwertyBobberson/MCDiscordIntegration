@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nD9/mgDeirOAgQI0WOZsund0kBEU1PsIYCttRs6QFbc9/iDkwSQM/HVm/EqpKs5HP40Mzn2n7G15pcsZETC73Q==",
+  "dgSpecHash": "GPABU5Cbg8wj+2q2w+NWqPAJtZr/6I0uWqaLtKZ4NEWF038VictZmbbUPlplkQmik+j/fRlDt7609X+SsH5cPQ==",
   "success": true,
   "projectFilePath": "/home/qwob/Projects/MCDiscord/MCDiscord.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,8 @@
     "/home/qwob/.nuget/packages/system.linq.async/5.0.0/system.linq.async.5.0.0.nupkg.sha512",
     "/home/qwob/.nuget/packages/system.reactive/5.0.0/system.reactive.5.0.0.nupkg.sha512",
     "/home/qwob/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+    "/home/qwob/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/home/qwob/.nuget/packages/microsoft.netcore.app.host.linux-x64/5.0.12/microsoft.netcore.app.host.linux-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

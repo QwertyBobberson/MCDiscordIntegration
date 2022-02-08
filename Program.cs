@@ -22,9 +22,9 @@ namespace MCDiscord
             {
                 GatewayIntents = GatewayIntents.Guilds
             });
-            
-            string varsDirectory = "./vars";
-            string serverName = args[0];
+            Console.WriteLine("Started");
+            string varsDirectory = args[0];
+            string serverName = args[1];
             string lastTimestamp = "[:::]";
             if(File.Exists(varsDirectory))
             {
@@ -89,6 +89,10 @@ namespace MCDiscord
                         logsFile.Close();
                     }
                 }
+            }
+            else
+            {
+                Console.WriteLine($"File {varsDirectory} does not exist");
             }
         
         }
