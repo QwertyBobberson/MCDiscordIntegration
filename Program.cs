@@ -35,8 +35,6 @@ namespace MCDiscord
                 string token = vars.ReadLine();
                 guildID = long.Parse(vars.ReadLine());
                 channelID = long.Parse(vars.ReadLine());
-                
-                _client.Ready += Test;
 
                 await _client.LoginAsync(TokenType.Bot, token);
                 await _client.StartAsync();
@@ -78,7 +76,7 @@ namespace MCDiscord
                                     }
                                     if(latestLog.Contains("joined the game"))
                                     {
-                                        Console.WriteLine(whitelist[j] + " has connected from the server");
+                                        Console.WriteLine(whitelist[j] + " has connected to the server");
                                         await channel.SendMessageAsync(whitelist[j] + " has connected to the server");
                                     }
                                 }
@@ -94,13 +92,6 @@ namespace MCDiscord
             {
                 Console.WriteLine($"File {varsDirectory} does not exist");
             }
-        
-        }
-
-        public async Task Test()
-        {
-            Console.WriteLine("Channel loaded");
-            channel = _client.GetGuild(924488251723636816).GetTextChannel(924489602813792326);
         }
     }
 }
