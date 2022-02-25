@@ -13,8 +13,8 @@ namespace MCDiscord
 
         public static Task Main(string[] args) => new Program().MainAsync(args);
         
-        long guildID;
-        long channelID;
+        ulong guildID;
+        ulong channelID;
 
         public async Task MainAsync(string[] args)
         {
@@ -22,22 +22,23 @@ namespace MCDiscord
             {
                 GatewayIntents = GatewayIntents.Guilds
             });
-            Console.WriteLine("Started");
             string varsDirectory = args[0];
             string serverName = args[1];
-            string lastTimestamp = "[:::]";
+            string lastMessage = "[:::]";
             if(File.Exists(varsDirectory))
             {
+                Console.WriteLine($"{varsDirectory} exists");
                 StreamReader vars = new StreamReader(File.OpenRead(varsDirectory));
                 string minecraftDirectory = vars.ReadLine() + $"{serverName}/";
                 string logsDirectory = minecraftDirectory + "logs/latest.log";
                 string[] whitelist = vars.ReadLine().Split(',');
                 string token = vars.ReadLine();
-                guildID = long.Parse(vars.ReadLine());
-                channelID = long.Parse(vars.ReadLine());
+                guildID = ulong.Parse(vars.ReadLine());
+                channelID = ulong.Parse(vars.ReadLine());
 
                 await _client.LoginAsync(TokenType.Bot, token);
                 await _client.StartAsync();
+                _client.Ready += GetChannel;
 
                 if(!File.Exists(logsDirectory))
                 {
@@ -52,19 +53,20 @@ namespace MCDiscord
                         string[] logs = logsFile.ReadToEnd().Split('\n');
                         int i = 0;
                         string latestLog;
+                        
                         do
                         {  
                             i++;
                             latestLog = logs[logs.Length - i].Trim();
                         } while(latestLog == "");
-
+                        
                         if(channel == null)
                         {
                             continue;
                         }
 
-                        if(!latestLog.Contains(lastTimestamp))
-                        {
+                        while(latestLog != lastMessage && i < logs.Length)
+                        {  
                             for(int j = 0; j < whitelist.Length; j++)
                             {
                                 if(latestLog.Contains(whitelist[j]))
@@ -81,10 +83,23 @@ namespace MCDiscord
                                     }
                                 }
                             }
-                            lastTimestamp = latestLog.Substring(0, 10);
-                        }
 
+                            i++;
+                            latestLog = logs[logs.Length - i].Trim();
+                        } 
+                        
+                        i = 0;
+                        
+                        do
+                        {  
+                            i++;
+                            latestLog = logs[logs.Length - i].Trim();
+                        } while(latestLog == "");
+
+                        lastMessage = latestLog;
                         logsFile.Close();
+                        Console.WriteLine("Thread Sleeping");
+                        System.Threading.Thread.Sleep(10000);
                     }
                 }
             }
@@ -92,6 +107,11 @@ namespace MCDiscord
             {
                 Console.WriteLine($"File {varsDirectory} does not exist");
             }
+        }
+
+        public async Task GetChannel()
+        {
+            channel = _client.GetGuild(guildID).GetTextChannel(channelID);
         }
     }
 }
