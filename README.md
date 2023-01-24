@@ -1,16 +1,15 @@
-Sends a message to a discord channel when a user joins or leaves a minecraft server
+Sends a message to a discord channel when a user joins or leaves a server
 
 Format:
-MCDiscord [PATHTOENVVARS] [NAMEOFMINECRAFTSERVER]
+MCDiscord [PATHTOENVVARS]
 
 Path of Env Variables: A path to a text file containing settings
 
 Format of Env Variables:
-Line 1: directory to parent of folder of minecraft server
+Line 1: directory server logs file
 Line 2: List of usernames
-Line 3: Token for the bot
-Line 4: Server GUID
-Line 5: Channel GUID
-
-Name of Minecraft Server:
-Folder Minecraft_Server.jar is in
+Line 3: REGEX matching the logs when a player joins
+Line 4: REGEX matching the logs when a player leaves
+Line 5: Token for the bot
+Line 6: Server GUID
+Line 7: Channel GUID

@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/qwob/Projects/MCDiscord/MCDiscord.csproj": {}
+    "/home/qwob/Projects/Utilities/MCDiscord/MCDiscord.csproj": {}
   },
   "projects": {
-    "/home/qwob/Projects/MCDiscord/MCDiscord.csproj": {
+    "/home/qwob/Projects/Utilities/MCDiscord/MCDiscord.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/qwob/Projects/MCDiscord/MCDiscord.csproj",
+        "projectUniqueName": "/home/qwob/Projects/Utilities/MCDiscord/MCDiscord.csproj",
         "projectName": "MCDiscord",
-        "projectPath": "/home/qwob/Projects/MCDiscord/MCDiscord.csproj",
+        "projectPath": "/home/qwob/Projects/Utilities/MCDiscord/MCDiscord.csproj",
         "packagesPath": "/home/qwob/.nuget/packages/",
-        "outputPath": "/home/qwob/Projects/MCDiscord/obj/",
+        "outputPath": "/home/qwob/Projects/Utilities/MCDiscord/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/qwob/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,12 +35,12 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Discord.Net": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.9.0, )"
             }
           },
           "imports": [
@@ -49,18 +49,15 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[5.0.12, 5.0.12]"
+              "version": "[7.0.1, 7.0.1]"
             }
           ],
           "frameworkReferences": {
@@ -68,12 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

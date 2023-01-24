@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "GPABU5Cbg8wj+2q2w+NWqPAJtZr/6I0uWqaLtKZ4NEWF038VictZmbbUPlplkQmik+j/fRlDt7609X+SsH5cPQ==",
+  "dgSpecHash": "uKI3bRzxdh0hikLnhd45Augz6p8C8rNp6ChF0cr09H8GZ7c0FdsJV8pwfS1M3D7SsO959yvW6jYQnl3UxdzpEQ==",
   "success": true,
-  "projectFilePath": "/home/qwob/Projects/MCDiscord/MCDiscord.csproj",
+  "projectFilePath": "/home/qwob/Projects/Utilities/MCDiscord/MCDiscord.csproj",
   "expectedPackageFiles": [
-    "/home/qwob/.nuget/packages/discord.net/3.1.0/discord.net.3.1.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/discord.net.commands/3.1.0/discord.net.commands.3.1.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/discord.net.core/3.1.0/discord.net.core.3.1.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/discord.net.interactions/3.1.0/discord.net.interactions.3.1.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/discord.net.rest/3.1.0/discord.net.rest.3.1.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/discord.net.webhook/3.1.0/discord.net.webhook.3.1.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/discord.net.websocket/3.1.0/discord.net.websocket.3.1.0.nupkg.sha512",
+    "/home/qwob/.nuget/packages/discord.net/3.9.0/discord.net.3.9.0.nupkg.sha512",
+    "/home/qwob/.nuget/packages/discord.net.commands/3.9.0/discord.net.commands.3.9.0.nupkg.sha512",
+    "/home/qwob/.nuget/packages/discord.net.core/3.9.0/discord.net.core.3.9.0.nupkg.sha512",
+    "/home/qwob/.nuget/packages/discord.net.interactions/3.9.0/discord.net.interactions.3.9.0.nupkg.sha512",
+    "/home/qwob/.nuget/packages/discord.net.rest/3.9.0/discord.net.rest.3.9.0.nupkg.sha512",
+    "/home/qwob/.nuget/packages/discord.net.webhook/3.9.0/discord.net.webhook.3.9.0.nupkg.sha512",
+    "/home/qwob/.nuget/packages/discord.net.websocket/3.9.0/discord.net.websocket.3.9.0.nupkg.sha512",
     "/home/qwob/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "/home/qwob/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/home/qwob/.nuget/packages/system.collections.immutable/5.0.0/system.collections.immutable.5.0.0.nupkg.sha512",
@@ -18,8 +18,7 @@
     "/home/qwob/.nuget/packages/system.linq.async/5.0.0/system.linq.async.5.0.0.nupkg.sha512",
     "/home/qwob/.nuget/packages/system.reactive/5.0.0/system.reactive.5.0.0.nupkg.sha512",
     "/home/qwob/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "/home/qwob/.nuget/packages/microsoft.netcore.app.host.linux-x64/5.0.12/microsoft.netcore.app.host.linux-x64.5.0.12.nupkg.sha512"
+    "/home/qwob/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.1/microsoft.aspnetcore.app.ref.7.0.1.nupkg.sha512"
   ],
   "logs": []
 }
